@@ -1,12 +1,82 @@
-# My custom layout for Preonic
+# Preonic custom hardwar and firmware config
 
-*Created 08/23/21*
+*Created 08/23/21*  
+*Last updated 05/14/22*
 
-## Notes   
+- [Overview](#overview)
+- [Hardware](#hardware)
+  - [PCB and Case](#pcb-and-case)
+  - [Switches](#switches)
+  - [Keycaps](#keycaps)
+- [Firmware](#firmware)
+  - [Layer 1](#layer-1)
+  - [Layer 2](#layer-2)
+  - [Layer 3](#layer-3)
+  - [Layer 4](#layer-4)
+- [Installation Notes](#installation-notes)
+- [Development Steps](#development-steps)
+- [References](#references)
+
+## Overview
+This a custom 4 layer setup for the Preonic ortholinear keyboard. Features:
+- Base layer for normal typing
+- Quick toggleable decond layer for vim like movement (hjkl) + easier symbols
+- Third layer dedicated to window management and screenshotting key combos
+- Fourth special musical keyboard layer
+
+![](imgs/switches.jpeg)
+![](imgs/keycaps.jpeg)
+![](imgs/setup.jpeg)
+
+
+## Hardware
+### PCB and Case
+[OLKB](https://olkb.com/) Preonic with aluminum case
+
+### Switches
+- Kailh Speed silvers (top 4 rows)
+  - Linear, light-weight for regular typing with thick keycaps because keypresses are registered about halfway as you press down a key. Takes a bit to get used to it, but once you do it's a great "feathery" or "floaty" typing feeling.
+- Kailh Box Pale Blue (last row)
+  - Tactile clicky because it's mapped to a layer toggle
+- Kailh Box white (last row)
+  - Tactile clicky because it's mapped to a layer toggle
+- Cherry mx reds (last row)
+  - Linear like the silvers, but a tiny bit heavier and don't register a keypress so lightly. Great for key that your rest your thumbs on, as you won't accidentally register a keypress like the silvers.
+
+### Keycaps
+- Drop MT3 Camillo Ortho set (grey, white, blue)
+- Drop MT3 Skiidata Ortho set (black, orange)
+
+## Firmware
+
+### Layer 1
+Normalish typing with vim like movement (hjkl), space/backspace on thumbs, and layer 2 quick-toggle on Esc  
+![](/imgs/layer_0.png)
+### Layer 2
+Easier access to common symbols (e.g brackets) and command modifiers (e.g. shift)   
+![](/imgs/layer_1.png)
+### Layer 3
+Primarily for window management with [Rectangle](https://rectangleapp.com/)  
+![](/imgs/layer_2.png)
+### Layer 4
+A special layer that can toggle a musical keyboard. To activate:  
+1. Start on layer 1 (base)
+2. *RSE* (last row, fifth from the right): this moves to layer 2
+3. *GREY ENTER* (last row, fourth from the right): this moves to layer 4
+4. *GREY ENTER* (same key as above): this turns on/off music mode. All keys in this mode musical notes except:
+    - *GREY ENTER*: this toggles music mode on/off 
+    - *BLACK DIAMOND*: this changes the scale of the keyboard (e.g. chromatic)
+
+To turn off the musical keyboard and return to layer 1 just press:
+1. *GREY ENTER*: turn off music mode
+2. *RSE*: move to layer 1
+
+
+## Installation Notes   
 - After installing `qmk` from homebrew, all the files below will live inside `~/qmk_firmware/keyboards/preonic/keymaps`
 - Clone this repo into that directory (this avoids forking the entire QMK firmware and just retains the config files)
 
-## Steps  
+## Development Steps  
 1. Install qmk: `brew install qmk/qmk/qmk`
 2. Setup qmk: `qmk setup`
 3. Set preonic to default keyboard: `qmk config user.keyboard=preonic/rev3`

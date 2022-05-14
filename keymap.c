@@ -40,7 +40,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 };
 
 // Define music key mask (doesn't really work)
-// But not an issue with mapping setup above:
+// But not an issue with mapping setup above (numbers refer to array index not layer number!):
 // On Layer 1 tap play/pause to go to Layer 3 which has no keys
 // On Layer 3 tap play/pause to turn music mode on and off
 // On Layer 3 tap Layer 1 toggle to go back to Layer 0
