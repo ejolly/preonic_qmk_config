@@ -1,4 +1,4 @@
-# Preonic custom hardwar and firmware config
+# Preonic custom hardware and firmware config
 
 *Created 08/23/21*  
 *Last updated 05/14/22*
