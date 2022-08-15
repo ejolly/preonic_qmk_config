@@ -1,7 +1,7 @@
 # Preonic custom hardware and firmware config
 
 *Created 08/23/21*  
-*Last updated 05/14/22*
+*Last updated 08/15/22*
 
 - [Overview](#overview)
 - [Hardware](#hardware)
