@@ -97,7 +97,7 @@ To turn off the musical keyboard and return to layer 1 just press:
 
 [QMK Music Mode](https://beta.doc.qmk.fm/using-qmk/hardware-features/feature_audio#music-map)   
 
-[Full keycode list](https://beta.doc.qmk.fm/using-qmk/simple-keycodes/keycodes) 
+[Full keycode list](https://docs.qmk.fm/#/keycodes) 
 
 [Tapping/mod settings](https://beta.docs.qmk.fm/using-qmk/software-features/tap_hold) 
 
